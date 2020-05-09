@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'products.apps.ProductsConfig',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -54,10 +55,12 @@ ROOT_URLCONF = 'my_django_site.urls'
 
 TEMPLATES = [
     {
+        
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             os.path.join(BASE_DIR, 'templates')
         ],
+        
         'APP_DIRS': True, 
         'OPTIONS': {
             'context_processors': [
@@ -82,6 +85,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
+
 
 
 # Password validation

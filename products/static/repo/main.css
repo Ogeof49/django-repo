@@ -26,14 +26,19 @@ body {
   
     height: 35px;
 }
-
+.right-bar{
+    float: right;
+    padding-top: 20px;
+    margin-left: 20px;
+}
 .navbar-nav li {
     padding: 0 15px;
     padding-left: 30px !important;
 }
 .navbar-nav li a {
-    color: #ffffff  !important;
+    color: #fcfcfc  !important;
     font-weight: 600;
+    font-size: 18px;
 }
 .navbar-nav li a:hover {
     cursor: pointer; 
@@ -76,8 +81,51 @@ body {
     color: #1f1e1e;
 
 }
+.blog_p {
+    font-size: 17px !important;
+}
+.contact-us {
+    padding: 15px;
+    padding-right: 15px !important;
+}
+
+.contact-us .col-md-6 {
+    padding: 5px;
+}
 .jumbotronmain_audit{
-    background-image: url('../repo/images/banner.jpeg');
+    background-image: url('../repo/images/photo.jpeg');
+    background-size: cover;
+    min-height: 350px;
+    background-color: #1F1E1D;
+    text-align:left;
+    color: #fffffe;
+    position: relative;
+    margin: 0;
+    top: 0 !important;
+    border-radius: 0 !important;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    
+}
+.jumbotronmain_web{
+    background-image: url('../repo/images/banner2.jpeg') !important;
+    background-size: cover;
+    min-height: 350px;
+    background-color: #1F1E1D;
+    text-align:left;
+    color: #fffffe;
+    position: relative;
+    margin: 0;
+    top: 0 !important;
+    border-radius: 0 !important;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    
+}
+.jumbotronmain_graphics_2{
+    background-image: url('../repo/images/graphics.jpeg') !important;
     background-size: cover;
     min-height: 350px;
     background-color: #1F1E1D;
@@ -93,6 +141,22 @@ body {
     
 }
 
+.jumbotronmain_photography{
+    background-image: url('../repo/images/photography.jpeg') !important;
+    background-size: cover;
+    min-height: 350px;
+    background-color: #1F1E1D;
+    text-align:left;
+    color: #fffffe;
+    position: relative;
+    margin: 0;
+    top: 0 !important;
+    border-radius: 0 !important;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    
+}
 
 .jumbotronmain_graphics{
     background-image: url('/images/3.jpg');
