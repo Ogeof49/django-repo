@@ -1,0 +1,82 @@
+
+    {% extends 'base.html' %}
+    {% load static %}
+    {% block content %}
+
+      
+      <section id="content-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+        <h2>Secure software development philosophy</h2>
+        <p>Software should be secure by default.</p>
+          
+        </div>
+      </div>
+        </div>
+      </section>
+      
+      
+      
+      <section id="services">
+        <div class="container-lg">
+          <div class="row text-left">
+            {% for blog in blogs %}
+            <div class="col-md-4">
+              <a href="{% url 'blog_detail' blog.slug  %}"><img src="{{ blog.image_url }}" alt="" class="img-fluid service-img"></a>
+              <br/><br/>
+           <h4>{{ blog.title }}</h4>
+              <p>{{ blog.content }}</p>
+              <br/>
+
+              <p>Published: {{ blog.created_on }}</p>
+            </div>
+      
+             {% endfor %}
+      
+             
+      
+      
+             
+          </div>
+        </div>
+      </section>
+      
+      
+      
+      
+      
+      
+      
+      <div class="content">
+        <section>
+          <div class="container">
+            <hr id="">
+            <h2>What Repo can do for you?</h2>
+            <hr id="">
+      
+      
+            <p>Our company employs industry-leading experts on <a href="#">web application security</a> and <a href="#">applied cryptography</a>. We…</p>
+          <ul>
+            <li>Develop new software with a secure-by-default mindset</li>
+            <li>Perform vulnerability assessments on your company's network and/or source code</li>
+            <li>Coordinate with open source projects to make the Internet more secure            </li>
+            <li>Assist with data breaches and incident response            </li>
+            <li>Provide application hardening and security compliance consulting
+            </li>
+          </ul>
+      
+          <p>…and offer <a href="#">many other related services</a>. Our specialty is cryptographically secure <a href="#">PHP development</a>.</p>
+      
+      
+          
+          
+          </div>
+        </section>
+      
+      
+      </div>
+      
+
+
+    {% endblock %}
