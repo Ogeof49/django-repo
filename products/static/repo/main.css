@@ -44,6 +44,11 @@ body {
     cursor: pointer; 
     color: #f3d078 !important
 }
+.content-headers{
+    padding-top: 70px;
+    margin-top: 20px;
+}
+
 #content-header{
     text-align: center;
     padding-top: 70px;
@@ -371,6 +376,17 @@ footer a{
     border-radius: 4px;
     
 }
+
+.service-imgs {
+    width:100%;
+    height: auto;
+    margin-top: 20px; 
+    min-height: 230px;
+    border: 2px solid #dddcdc;
+    border-radius: 4px;
+    
+}
+
 .service-img:hover {
     border: 2px solid #da7605;
     border-radius: 4px;

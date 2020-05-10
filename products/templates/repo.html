@@ -3,44 +3,33 @@
     {% load static %}
     {% block content %}
 
+    <br/>
+    <br/>
       
-      <section id="content-header">
+      <section class="content-headers">
         <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-        <h2>Secure software development philosophy</h2>
+        <h2>{% block title %} {{ object.title }} {% endblock title %}</h2>
         <p>Software should be secure by default.</p>
-          
-        </div>
-      </div>
-        </div>
+        </div>  
       </section>
-      
-      
-      
-      <section id="services">
-        <div class="container-lg">
-          <div class="row text-left">
-            {% for blog in blogs %}
-            <div class="col-md-4">
-              <a href="{% url 'blog_detail' blog.slug  %}"><img src="{{ blog.image_url }}" alt="" class="img-fluid service-img"></a>
-              <br/><br/>
-           <h4>{{ blog.title }}</h4>
-              <p>{{ blog.content }}</p>
-              <br/>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+        <a href="#"><img src="{{ blog.image_url }}" alt="" class="img-fluid service-imgs"></a>
 
-              <p>Published: {{ blog.created_on }}</p>
-            </div>
+        <p><i class="fa fa-building"></i>&nbsp;Published: {% block created_on %} {{ object.created_on }} {% endblock created_on %}</p>
+        <p><i class="fa fa-user"></i>&nbsp;Author: {% block author %} {{ object.author }} {% endblock author %}</p>
+      </div>
+
+
+      <div class="col-md-6">
+        <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/000/163/978/non_2x/vector-video-blogger-creator-making-video-stream.jpg" alt="" class="img-fluid service-imgs"></a>
+      </div>
+    </div>
+  </div>
       
-             {% endfor %}
       
-             
-      
-      
-             
-          </div>
-        </div>
-      </section>
+
       
       
       
